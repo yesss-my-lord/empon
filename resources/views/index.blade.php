@@ -8,8 +8,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
-        gtag('config', 'UA-163324296-1');
       </script>
       <!-- Google Tag Manager -->
       <script>
