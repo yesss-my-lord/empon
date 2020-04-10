@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{ $locale }}">
   <head>
+    @if( env('APP_ENV') == 'production')
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163324296-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163324296-1');
+      </script>
+    @endif
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ $title }}</title>
@@ -15,7 +26,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/whatsapp.css') }}">
     <link rel="icon" href="/storage/data/images/empon-favicon.png" sizes="16x16" type="image/png">
-
+    
   </head>
   <body>
     <!-- Fixed navbar -->
