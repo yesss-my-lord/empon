@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{{ asset('css/styles-merged.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/whatsapp.css') }}">
+    <link rel="icon" href="/storage/data/images/empon-favicon.png" sizes="16x16" type="image/png">
 
   </head>
   <body>

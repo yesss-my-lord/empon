@@ -15,7 +15,7 @@ class HomeController extends BaseController
     public function index(Request $request){
         
         $data = [
-            'title' => __('common.title'),
+            'title' => __('meta.title'),
             'meta' => [
                 'title' =>  __('meta.title'),
                 'description' =>  __('meta.description'),
