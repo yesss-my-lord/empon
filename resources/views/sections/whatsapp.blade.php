@@ -13,7 +13,7 @@
   </div>
   <div class='home-chat'>
     @foreach ($contact->salesman as $salesman)
-      <a class='informasi' href='javascript:void' title='Chat Whatsapp'>
+      <a class='informasi' href='javascript:void' title='Chat Whatsapp' id="chat-{{ Str::lower($salesman->title) }}">
         <div class='info-avatar'>
           <img src="{{ $salesman->image }}"/>
         </div>
