@@ -19,9 +19,9 @@
                     <figure><img src="{{ $description->image }}" alt="{{ $description->image }}"></figure>
                 <div class="text">
                     {{-- <span class="date">June 29, 2017</span> --}}
-                    <h3><a href="{{ $description->href }}">{{ $description->title }}</a></h3>
+                    <h3><a href="{{ $description->href }}" >{{ $description->title }}</a></h3>
                     <p>{{ $description->content }}</p>
-                    <p class=""><a href="{{ $description->href }}" target="blank" class="probootstrap-custom-link link-sm">{{ __('link.order_now') }}</a></p>
+                    <p class=""><a href="{{ $description->href }}" target="blank" id="order-{{ Str::lower($description->title) }}" class="probootstrap-custom-link link-sm">{{ __('link.order_now') }}</a></p>
                 </div>
                 </div>
             </div>
