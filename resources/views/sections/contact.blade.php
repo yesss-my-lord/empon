@@ -7,7 +7,8 @@
             <h3 class="secondary-heading">{{$contact->title_sub}}</h3>
           </div>
           <p>{{$contact->content}}</p>
-          <p> <a class='blantershow-chat-button' href='javascript:void' title='{{ __('title.chat_now') }}'><i class='fab fa-whatsapp'></i>{{ __('title.chat') }}</a></p>
+          {{-- <p> <a class='blantershow-chat-button' href='javascript:void' title='{{ __('title.chat_now') }}'><i class='fab fa-whatsapp'></i>{{ __('title.chat') }}</a></p> --}}
+          <p> <a href='http://loops.empon.id/empon-empon-premium' title='{{ __('title.chat_now') }}'><i class='fab fa-whatsapp'></i>{{ __('title.chat') }}</a></p>
         </div>
         {{-- <div class="col-md-6 col-md-push-1 probootstrap-animate">
           <form method="post" class="probootstrap-form">
