@@ -38,7 +38,66 @@
       </div>
     </div>
   </section>
-
+  <section class="probootstrap-section probootstrap-bg-white" data-section="contact">
+    <div class="container">
+      <div class="row">
+        <style>
+          .loops-group {display: block; margin-bottom: 20px;}
+          .loops-group label { font-weight: bold; }
+          .loops-group input { display: block; width: 100%; height: 36px; border: 1px solid #ccc; border-radius: 3px; }
+          .loops-group textarea {display: block; width: 100%; border: 1px solid #ccc; border-radius: 3px;}
+          .loops-group input.loops-submit { background: #81bd4b; color: #fff; }
+          .loops-footer {font-size: 11px; color: #ccc; font-style: italic;}
+      </style>
+      <form id="form-order" class="loops-forms" action="http://staging.loops.id/save-order/empon-empon-premium" method="POST">
+                                                          <div class="loops-group">
+                  <label for="variants">&nbsp;</label>
+                  <label for="variants-input">Pilih varian<span class="red">*</span></label>
+                  <div class="row variants-wrapper">
+                                                                                                              <select id="variants" name="variants[Paket]" required style="margin-bottom:3px;">
+                                  <option value="">Pilih Paket</option>
+                                                                          <option value="500gr">500gr</option>
+                                                                          <option value="1kg">1kg</option>
+                                                                          <option value="2kg">2kg</option>
+                                                                  </select>
+                                                                                                                                          <select id="variants" name="variants[Extra Jahe]" required style="margin-bottom:3px;">
+                                  <option value="">Pilih Extra Jahe</option>
+                                                                          <option value="Ya">Ya</option>
+                                                                          <option value="Tidak">Tidak</option>
+                                                                  </select>
+                                                                          <input id="variants-input" type="number" name="variants[qty]" min="1" required placeholder="Jumlah">
+                  </div>
+                              </div>
+                                      <div class="loops-group">
+                  <label for="name">Ini Label Form Nama<span class="red">*</span></label>
+                  <input type="text" id="name" name="name" value="" required placeholder="Tulis nama Anda">
+              </div>
+                                      <div class="loops-group">
+                  <label for="email">Ini Label Form Email</label>
+                  <input type="text" id="email" name="email" value="" placeholder="Tulis email Anda">
+              </div>
+                                      <div class="loops-group">
+                  <label for="phone">Ini Label Form HP<span class="red">*</span></label>
+                  <input type="number" id="phone" name="phone" value="" required placeholder="Sebutkan nomor HP aktif Anda: contoh 081234567890">
+              </div>
+                                      <div class="loops-group">
+                  <label for="address">Ini Label Form Alamat<span class="red">*</span></label>
+                  <textarea name="address" id="address" cols="30" rows="5" required placeholder="Tulis alamat lengkap untuk pengiriman, (Kecamatan, Kota/Kabupaten, Provinsi, dan Kode Pos bila ada)"></textarea>
+              </div>
+                                      <input type="hidden" name="product" value="Empon-empon Premium">
+                      <div class="loops-group">
+              <input type="submit" value="Pesan Sekarang" class="loops-submit">
+          </div>
+          <input type="hidden" name="redirect" value="">
+          <input type="hidden" name="_loops_nonce" value="">
+          <p class="loops-footer">Powered by <a href="https://loops.id/?utm_source=form-embed&utm_content=1">Loops.id</a>.</p>
+      </form>
+                  <script>var form = document.getElementById('form-order');form.addEventListener('submit', function(e){if ( "undefined" != typeof fbq ) {fbq("track",  "AddToCart", {"source": "loops.id","version": "0.16.0"});}});</script>
+              
+      </div>
+    </div>
+  </section>
+  
   {{-- <section class="probootstrap-footer">
     <div class="container">
       <div class="row">
