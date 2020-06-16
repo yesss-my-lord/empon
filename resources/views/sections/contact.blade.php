@@ -49,7 +49,7 @@
           .loops-group input.loops-submit { background: #81bd4b; color: #fff; }
           .loops-footer {font-size: 11px; color: #ccc; font-style: italic;}
       </style>
-      <form id="form-order" class="loops-forms" action="https://staging.loops.id/save-order/empon-empon-premium-2empon-bubuk-premium" method="POST">
+      <form id="form-order" class="loops-forms" action="https://staging.loops.id/save-order/empon-empon-premium-2" method="POST">
                                                                       <div class="loops-group">
                   <label for="name">Nama<span class="red">*</span></label>
                   <input type="text" id="name" name="name" value="" required placeholder="Tulis nama Anda">
